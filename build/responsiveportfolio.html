@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mrportfolio.com</title>
+        <style>
+            
+            #intro{
+                color:rgb(236, 226, 226);
+                font-weight:100 ;
+                font-size:40px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+                text-align: center;
+            }
+            #imgcover{
+                border:0px solid yellow;
+                border-radius:15px;
+                width:550px;
+                height:350px;
+                position:absolute;
+                left:300px;
+                top: 250px;
+                text-align: center;
+                text-decoration:none ;
+                color:rgba(54, 6, 187, 0.5);
+                font-weight:200;
+                font-size:35px;
+                background-color: rgb(17, 13, 13);
+                
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                
+
+                
+            }
+            #image{
+                border:2px dashed rgba(7, 1, 1,0.5);
+                border-radius:50%;
+                width:80%;
+                height:80%;
+                background-image: url("/WhatsApp Image 2024-07-23 at 08.58.56.jpeg");
+                background-size:contain;
+                animation:imageanimation 2s linear 3s infinite alternate;
+                
+            }
+            @keyframes imageanimation{
+                from{transform:scale(1,1);}
+                to{transform:scale(0.75,0.75);}
+            }
+            
+            .elements{
+                height:50px;
+                width:100%;
+                display:inline-block;
+                flex-direction:column;
+                justify-content:space-between;
+                background-color: rgb(17, 13, 13);
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+            }
+            .subelements{
+                width:160px;
+                height:50px;
+               
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius:10px;
+                background-color:rgba(17, 13, 13,0.1);
+                
+
+            }
+            #link{
+                text-decoration: none;
+                color:white;
+                
+            }
+            
+            #whole{
+                background-color: rgb(17, 13, 13);
+                height:100vh;
+                width:100vw;
+            }
+            .subelements:hover{
+                background-color:rgba(182, 175, 175,0.5);
+            }
+            #link:hover{
+                color:black
+            }
+           
+            #caption{
+                color:white;
+                
+                font-size:15px;
+                width:98%;
+                height:100%;
+                background-color:  rgb(17, 13, 13);
+                text-align:center;
+                display:flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+            }
+            
+            /*#feedback{
+                background-color: rgb(17, 13, 13);
+                color:antiquewhite
+            }*/
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="whole">
+        
+        <hr>
+        <div id="imgcover">
+            <div id="image"></div>
+            <div id="caption"><p id="self">Myself,<br>Souvik Purkait,a<br> Passionate Programmer<br>--------------------------------------<br> SKILLS SPEAK LOUDER THAN WORDS</div>
+        </div>
+        <div class="elements">
+        <div id="about" class="subelements"><a id="link"href="http://127.0.0.1:5500/portfolio/aboutme.html" target="__main__">ABOUT</a></div>
+        <div id="skills"class="subelements" ><a id="link"href="http://127.0.0.1:5500/portfolio/cgpa&skills.html" target="__main__">CGPA & SKILLS</a></div>
+        <div id="achievements" class="subelements" ><a id="link" href="http://127.0.0.1:5500/portfolio/achievements.html" target="__main__">ACHIEVEMENTS</div>
+        <div id="contacts" class="subelements"><a id="link" href="http://127.0.0.1:5500/CONTACT.HTML" target="__main__">CONTACT</div>
+        <div id="review" class="subelements"><a id="link" href="http://127.0.0.1:5500/portfolio/resume.html" target="__main__">RESUME</a></div>
+        <div id="feedbackdiv" class="subelements"><a id="link" href="http://127.0.0.1:5500/portfolio/feedback.html" target="__main__">FEEDBACK</a></div>
+        </div>
+        </div>
+        <div>
+        
+
+    </body>
+    <script src="portfolio.js"></script>
+</html>

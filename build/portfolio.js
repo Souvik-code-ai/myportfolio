@@ -1,0 +1,1 @@
+alert("Hi everyone.Welcome to my portfolio website.")
